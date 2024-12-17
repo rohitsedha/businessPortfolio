@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="Keywords" content="Teaching, Learning, Courses, Education">
+    <meta name="Description" content="Welcome to the Teaching and Learning Center. Offering a variety of educational courses and resources.">
+    <meta name="author" content="Teaching Business">
+    <link rel="stylesheet" href="static/styles.css">
+
+    
+    <title>Teaching and Learning Center</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="stylesheet">
+    
+    <!-- External Scripts -->
+    <script src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js" integrity="sha384-d/yhnowERvm+7eCU79T/bYjOiMmq4F11ElWYLmt0ktvYEVgqLDazh4+gW9CKMpYW" crossorigin="anonymous" async></script>
+    <script src="https://connect.facebook.net/en_US/fbevents.js" async></script>
+    <script src="https://www.googletagmanager.com/gtm.js?id=GTM-W76XGFR" async></script>
+    <script src="//capp.nicepage.com/781f8d2df1e82be1c0b11efaa9c236ae5ba9d041/main-libs.js"></script>
+
+    <link href="//capp.nicepage.com/781f8d2df1e82be1c0b11efaa9c236ae5ba9d041/main-libs.css" rel="stylesheet">
+
+    <script>
+        window.isAuthenticated = 0;
+        window.useExternalGtmCode = 0;
+        window.clientUserId = 0;
+        window.clientUserName = '';
+        window.userCountryCode = '';
+        window.logPageEvent = 1;
+        window.userHasAdsParams = 0;
+        window.utmSourceFromReferrer = 0;
+        window.currentLang = '';
+        window.baseUrl = 'website-templates';
+        window.currentUrl = 'website-templates';
+        window.np_userId = '';
+        window.isAmplitudeInitialized = false;
+        window.sha256Email = '';
+
+        // Additional JavaScript functions for analytics, tracking, and cookies can go here
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (location.href.indexOf('/frame/') === -1 && window.location.href.indexOf('skipCookie') === -1) {
+                PureCookie.initCookieConsent();
+            }
+            setCountryCode('https://location.nicepagesrv.com/country');
+            setUserIdCookie();
+            
+            var referrer = '';
+            var pageType = 'Teaching Business Portfolio';
+            sendAnalyticsFromUrl(referrer, pageType);
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <!-- Add navigation links for Home, Courses, About Us, Contact, etc. -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Introductory Banner) -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to the Teaching and Learning Center</h1>
+            <p>Offering a variety of courses to enhance your skills and knowledge.</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <!-- Dynamic course details can be added here -->
+            <div class="course-item">
+                <h3>Course Name</h3>
+                <p>Description of the course.</p>
+                <a href="#course-details">Learn More</a>
+            </div>
+            <!-- Repeat similar blocks for other courses -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing quality education and resources for students and professionals alike.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@teachingcenter.com</p>
+        <p>Phone: +1234567890</p>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Teaching and Learning Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+    if (window.hideFacebookPixelCode !== true) {
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+        var fbInitOptions = { em: '' };
+        if (clientUserId > 0) {
+            fbInitOptions.external_id = clientUserId;
+        }
+
+        fbq('init', '251025992170426', fbInitOptions);
+        fbq('track', 'PageView');
+    }
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=251025992170426&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Amplitude Code -->
+<script type="text/javascript">
+    (function (e, t) {
+        var n = e.amplitude || { _q: [], _iq: {} };
+        var r = t.createElement("script");
+        r.type = "text/javascript";
+        r.integrity = "sha384-d/yhnowERvm+7eCU79T/bYjOiMmq4F11ElWYLmt0ktvYEVgqLDazh4+gW9CKMpYW";
+        r.crossOrigin = "anonymous";
+        r.async = true;
+        r.src = "https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js";
+        r.onload = function () {
+            if (!e.amplitude.runQueuedFunctions) {
+                console.log("[Amplitude] Error: could not load SDK");
+            }
+        };
+        var i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+
+        function s(e, t) {
+            e.prototype[t] = function () {
+                this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+                return this
+            }
+        }
+
+        var o = function () { this._q = []; return this }
+        var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset"];
+        for (var u = 0; u < a.length; u++) {
+            s(o, a[u]);
+        }
+        n.Identify = o;
+
+        var c = function () { this._q = []; return this }
+        var l = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"];
+        for (var p = 0; p < l.length; p++) {
+            s(c, l[p]);
+        }
+        n.Revenue = c;
+
+        var d = ["init", "logEvent", "logRevenue", "setUserId", "setUserProperties", "setOptOut", "setVersionName", "setDomain", "setDeviceId", "setGlobalUserProperties", "identify", "clearUserProperties", "setGroup", "logRevenueV2", "regenerateDeviceId", "groupIdentify", "onInit", "logEventWithTimestamp", "logEventWithGroups", "setSessionId", "resetSessionId"];
+        function v(e) {
+            function t(t) {
+                e[t] = function () {
+                    e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+                }
+            }
+            for (var n = 0; n < d.length; n++) {
+                t(d[n]);
+            }
+        }
+        v(n);
+
+        n.getInstance = function (e) {
+            e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase();
+            if (!n._iq.hasOwnProperty(e)) {
+                n._iq[e] = { _q: [] };
+                v(n._iq[e]);
+            }
+            return n._iq[e];
+        };
+        e.amplitude = n;
+    })(window, document);
+
+    amplitude.getInstance().init("878f4709123a5451aff838c1f870b849");
+</script>
+
+<!-- ShareASale Cookie Handling -->
+<script>
+    var shareasaleSSCID = shareasaleGetParameterByName("sscid");
+
+    function shareasaleSetCookie(e, a, r, s, t) {
+        if (e && a) {
+            var o, n = s ? "; path=" + s : "", i = t ? "; domain=" + t : "", S = "";
+            if (r) {
+                o = new Date();
+                o.setTime(o.getTime() + r);
+                S = "; expires=" + o.toUTCString();
+            }
+            document.cookie = e + "=" + a + S + n + i + "; SameSite=None;Secure";
+        }
+    }
+
+    function shareasaleGetParameterByName(e, a) {
+        a || (a = window.location.href);
+        e = e.replace(/[\[\]]/g, "\\$&");
+        var r = new RegExp("[?&]" + e + "(=([^&#]*)|&|#|$)").exec(a);
+        return r ? (r[2] ? decodeURIComponent(r[2].replace(/\+/g, " ")) : "") : null;
+    }
+
+    shareasaleSSCID && shareasaleSetCookie("shareasaleSSCID", shareasaleSSCID, 94670778e4, "/");
+</script>
+
+<!-- Google Identity & Common Scripts -->
+<script>
+    window.serverSettings = {
+        fbAppId: '290410448063109',
+        googleAppId: '13150095650-mo8psu2colep6uv90a2mu6r87u87s35a.apps.googleusercontent.com'
+    };
+</script>
+<script src="https://accounts.google.com/gsi/client?hl=en" async=""></script>
+<script src="//csite.nicepage.com/Scripts/Site/auth-common.js?version=781f8d2df1e82be1c0b11efaa9c236ae5ba9d041" defer=""></script>
+
+<!-- Meta Robots -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Device Preview & Responsive Script -->
+<script type="text/javascript">
+    var device = 'desktop';
+
+    function init($) {
+        $('#previewDesktopBtn').click(function (e) {
+            setLivePreviewFrameSize($(this));
+            setActiveResponsiveButton(this);
+            e.preventDefault();
+        });
+
+        $('#previewLaptopBtn').click(function (e) {
+            setLivePreviewFrameSize($(this));
+            setActiveResponsiveButton(this);
+            e.preventDefault();
+        });
+
+        $('#previewTabletBtn').click(function (e) {
+            setLivePreviewFrameSize($(this));
+            setActiveResponsiveButton(this);
+            e.preventDefault();
+        });
+
+        $('#previewPhoneHorizontalBtn').click(function (e) {
+            setLivePreviewFrameSize($(this));
+            setActiveResponsiveButton(this);
+            e.preventDefault();
+        });
+
+        $('#previewPhoneBtn').click(function (e) {
+            setLivePreviewFrameSize($(this));
+            setActiveResponsiveButton(this);
+            e.preventDefault();
+        });
+
+        detectActiveResponsiveButton();
+    }
+
+    if (jQuery.isReady) {
+        init(jQuery);
+    } else {
+        jQuery(function ($) {
+            init($);
+        });
+    }
+
+    function setActiveResponsiveButton(btn) {
+        $(".page-preview-header > a").removeClass("active");
+        $(btn).addClass("active");
+    }
+
+    function detectActiveResponsiveButton() {
+        var d = device;
+        if (!d) {
+            d = 'desktop';
+        }
+        $("#preview" + d.charAt(0).toUpperCase() + d.substr(1) + "Btn").click();
+    }
+
+    function getDataPreviewSizeAttr(el) {
+        return el.closest("[data-preview-size]").attr("data-preview-size");
+    }
+
+    function setLivePreviewFrameSize(srcEl) {
+        var getScrollbarWidth = function () {
+            var s = $('<div style="width:100px;height:100px;overflow:scroll;visibility:hidden;position:absolute;top:-99999px"><div style="height:200px;"></div></div>')
+                .appendTo("body");
+            var res = s.width() - s.find("div").last().width();
+            s.remove();
+            return res;
+        };
+        var attr = getDataPreviewSizeAttr(srcEl);
+        $('#livePreviewFrame').width(attr.indexOf("%") !== -1 ? attr : parseInt(attr, 10) + getScrollbarWidth());
+    }
+</script>
