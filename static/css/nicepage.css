@@ -26438,7 +26438,7 @@ h6 {
   color: #ffffff;
 }
 .u-body {
-  color: #111111;
+  color: #111111; 
   background-color: #ffffff;
   --effect-scale: 1.1;
 }
@@ -42725,18 +42725,18 @@ a.u-button-style.u-button-style.active > .u-text-active-body-color[class*="u-bor
 a.u-link.u-text-hover-body-color:hover {
   color: #111111 !important;
 }
-.u-text-body-alt-color,
+/* .u-text-body-alt-color,
 .u-input.u-text-body-alt-color,
 .u-input.u-text-body-alt-color[class*="u-border-"],
 li.active > a.u-button-style.u-text-body-alt-color,
 li.active > a.u-button-style.u-text-body-alt-color[class*="u-border-"],
 a.u-button-style.u-text-body-alt-color,
 a.u-button-style.u-text-body-alt-color[class*="u-border-"] {
-  color: #ffffff !important;
+  color: #000000;
   
   
   
-}
+} */
 a.u-button-style.u-text-body-alt-color:hover,
 a.u-button-style.u-text-body-alt-color[class*="u-border-"]:hover,
 a.u-button-style.u-text-body-alt-color:focus,

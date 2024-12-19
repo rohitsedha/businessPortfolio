@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from businessPortfolio import views  # Import views from the businessPortfolio app
+from django.views.generic import TemplateView 
 
 urlpatterns = [
+    path("", TemplateView.as_view(template_name="index.html"), name="home"),
     path('', views.blog_list, name='blog_list'), 
     path('post/<int:post_id>/', views.post_detail, name='post_detail'), 
     path('home/', views.home_view, name='home'),
