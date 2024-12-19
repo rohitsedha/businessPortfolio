@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from businessPortfolio import views  # Import views from the businessPortfolio app
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.about_view, name="home"),            # Root URL
+    path('about/', views.about_view, name="about"),    # About URL
+    path('contact/', views.contact_view, name="contact"),  # Contact URL
+    path('index/', views.index_view, name="index"),    # Index URL
 ]

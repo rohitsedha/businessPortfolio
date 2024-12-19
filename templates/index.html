@@ -37,9 +37,9 @@ and be inspired, Educational programs">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-f299"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+  <body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="{% url 'home' %}" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-f299"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1">
-          <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+          <img src="{% static 'images/default-logo.png' %}" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -50,18 +50,18 @@ and be inspired, Educational programs">
             </a>
           </div>
           <div class="u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="./" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'home' %}" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'about' %}" style="padding: 10px 20px;">About</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'contact' %}" style="padding: 10px 20px;">Contact</a>
 </li></ul>
           </div>
           <div class="u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'home' %}">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about' %}">About</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contact' %}">Contact</a>
 </li></ul>
               </div>
             </div>
@@ -84,7 +84,7 @@ and be inspired, Educational programs">
               </div>
               <div class="u-align-left u-container-align-center-sm u-container-align-center-xs u-container-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500">
                 <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-xl u-valign-top-sm u-valign-top-xs u-container-layout-2">
-                  <img src="images/dswamin.png" alt="" class="u-expanded-width-lg u-expanded-width-xl u-image u-image-default u-image-1">
+                  <img src="{% static 'images/dswamin.png' %}" alt="" class="u-expanded-width-lg u-expanded-width-xl u-image u-image-default u-image-1">
                 </div>
               </div>
             </div>
@@ -384,7 +384,8 @@ c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg>
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-sheet-1">
         <h2 class="u-align-center u-text u-text-default u-text-palette-2-base u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">Educational programs</h2>
         <p class="u-align-center u-large-text u-text u-text-variant u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Dignissim sodales ut eu sem. Amet luctus venenatis</p>
-        <img class="u-expanded-width u-image u-image-round u-radius-20 u-image-1" src="images/24974f46-7b66-12b8-3abf-c6083e0a2c1f.jpg" alt="" data-image-width="1200" data-image-height="899" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="Right" data-animation-delay="500">
+        <img class="u-expanded-width u-image u-image-round u-radius-20 u-image-1" src="{% static 'images/24974f46-7b66-12b8-3abf-c6083e0a2c1f.jpg' %}" alt="" data-image-width="1200" data-image-height="899" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="Right" data-animation-delay="500">
+        
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-align-center u-container-style u-grey-5 u-list-item u-radius-20 u-repeater-item u-shape-round u-list-item-1" data-animation-name="fadeIn" data-animation-duration="1500" data-animation-direction="Right" data-animation-delay="500">
@@ -447,7 +448,7 @@ c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg>
               <div class="u-container-align-center-lg u-container-align-center-md u-container-align-center-xl u-container-style u-layout-cell u-size-20-lg u-size-20-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-animation-direction="">
                 <div class="u-container-layout u-valign-top u-container-layout-2">
                   <span class="u-align-center u-file-icon u-icon u-icon-1">
-                    <img src="images/733585.png" alt="">
+                    <img src="{% static 'images/733585.png' %}" alt="">
                   </span>
                   <h4 class="u-align-center u-text u-text-3"> Whatsapp Support</h4>
                   <p class="u-align-center u-text u-text-default-lg u-text-default-md u-text-default-xl u-text-4"> Add us on WhatsApp &amp; send queries for instant reply.</p>
@@ -457,7 +458,7 @@ c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg>
               <div class="cell-temp-clone u-container-align-center u-container-style u-layout-cell u-size-20-lg u-size-20-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
                 <div class="u-container-layout u-valign-top u-container-layout-3">
                   <span class="u-align-center u-file-icon u-icon u-text-palette-1-light-1 u-icon-2">
-                    <img src="images/684849-9e33152a.png" alt="">
+                    <img src="{% static 'images/684849-9e33152a.png' %}" alt="">
                   </span>
                   <h4 class="u-align-center u-text u-text-5"> Live Chat</h4>
                   <p class="u-align-center u-text u-text-6"> The fastest way to get in touch with an Expert</p>
