@@ -19,9 +19,10 @@ from django.urls import path
 from businessPortfolio import views  # Import views from the businessPortfolio app
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.about_view, name="home"),            # Root URL
-    path('about/', views.about_view, name="about"),    # About URL
-    path('contact/', views.contact_view, name="contact"),  # Contact URL
-    path('index/', views.index_view, name="index"),    # Index URL
+    path('', views.blog_list, name='blog_list'), 
+    path('post/<int:post_id>/', views.post_detail, name='post_detail'), 
+    path('home/', views.home_view, name='home'),
+    path('about/', views.about_view, name='about'),
+    path('contact/', views.contact_view, name='contact'),
+    path('index/', views.index_view, name='index'),
 ]
