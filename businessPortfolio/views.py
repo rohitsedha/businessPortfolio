@@ -21,3 +21,6 @@ def contact_view(request):
 
 def index_view(request):
     return render(request, 'index.html')
+
+def courses_view(request):
+    return render(request, 'course.html')
