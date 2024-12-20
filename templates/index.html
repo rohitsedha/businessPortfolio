@@ -51,8 +51,8 @@ and be inspired, Educational programs">
           </div>
           <div class="u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'home' %}" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'about' %}" style="padding: 10px 20px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'contact' %}" style="padding: 10px 20px;">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#about" style="padding: 10px 20px;">About</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#contactus" style="padding: 10px 20px;">Contact</a>
 </li></ul>
           </div>
           <div class="u-nav-container-collapse">
@@ -60,8 +60,8 @@ and be inspired, Educational programs">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'home' %}">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about' %}" >About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contact' %}">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#about" >About</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#contactus">Contact</a>
 </li></ul>
               </div>
             </div>
@@ -80,7 +80,7 @@ and be inspired, Educational programs">
                   <h1 class="u-align-left u-custom-font u-font-ubuntu u-text u-text-body-alt-color u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0" style="color: #000000;">SKY</h1>
                   <p class="u-align-left u-text u-text-body-alt-color u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250" style="color: #000000;">Welcome to SKY – Your Partner in Academic Success! At SKY, we provide personalized and effective tuition services for students across all subjects, from Class 1 to 12. Whether you need help with foundational subjects, exam preparation, or specialized coaching for competitive exams like NDA, AFCAT, or SSC, we’re here to guide you every step of the way.
                   </p>
-                  <a href="#" class="u-active-palette-1-light-3 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-3 u-radius-20 u-text-active-palette-1-base u-text-hover-palette-1-base u-white u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">contact us</a>
+                  <a href="#contactus" class="u-active-palette-1-light-3 u-align-left u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-3 u-radius-20 u-text-active-palette-1-base u-text-hover-palette-1-base u-white u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">contact us</a>
                 </div>
               </div>
               <div class="u-align-left u-container-align-center-sm u-container-align-center-xs u-container-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500">
@@ -148,7 +148,7 @@ and be inspired, Educational programs">
         </div>
       </div>
     </section>
-    <section class="skrollable skrollable-between u-align-center u-clearfix u-container-align-center u-image u-section-3" id="carousel_c253" data-image-width="2500" data-image-height="1278" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+    <section class="skrollable skrollable-between u-align-center u-clearfix u-container-align-center u-image u-section-3" id="about" data-image-width="2500" data-image-height="1278" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-body-alt-color u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Educational programs</h2>
         <p class="u-text u-text-body-alt-color u-text-default u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Learning is a journey we embark on every day, shaping our knowledge and growth with each step.</p>
@@ -166,7 +166,7 @@ and be inspired, Educational programs">
                 <p class="u-text u-text-default u-text-5">We offer comprehensive tuition for students in Classes 1 to 8, covering subjects like Mathematics, Science, English, Social Studies
                   Hindi/Regional Languages, Computer Science, and more!
                   </p>
-                <a href="#" class="u-active-none u-border-1 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-1">learn more</a>
+                <a href="{% url 'courses' %}#one" class="u-active-none u-border-1 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-1">learn more</a>
               </div>
             </div>
             <div class="u-align-left u-container-align-left u-container-style u-list-item u-palette-5-light-2 u-repeater-item u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
@@ -181,7 +181,7 @@ and be inspired, Educational programs">
                 <p class="u-text u-text-default u-text-8">For students in Classes 9 and 10, we offer tuition tailored to specific subjects which include Mathematics,
                   Science, English, Social Science, Computer Science.
                   </p>
-                <a href="#" class="u-active-none u-border-1 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-2">learn more</a>
+                <a href="{% url 'courses' %}#two" class="u-active-none u-border-1 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-2">learn more</a>
               </div>
             </div>
             <div class="u-align-left u-container-align-left u-container-style u-list-item u-palette-5-light-2 u-repeater-item u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
@@ -196,7 +196,7 @@ and be inspired, Educational programs">
                 <p class="u-text u-text-default u-text-11">For senior students in Classes 11 and 12, we provide specialized coaching in
                   Physics, Chemistry, Biology, Mathematics, Accountancy, Business Studies, Economics, English, Computer Science
                   </p>
-                <a href="#" class="u-active-none u-border-1 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-3">learn more</a>
+                  <a href="{% url 'courses' %}#three" class="u-active-none u-border-1 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-3">learn more</a>
               </div>
             </div>
             <div class="u-align-left u-container-align-left u-container-style u-list-item u-palette-5-light-2 u-repeater-item u-list-item-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
@@ -209,7 +209,7 @@ and be inspired, Educational programs">
                 <h5 class="u-text u-text-13">Coaching for Entrance Tests
                 </h5>
                 <p class="u-text u-text-default u-text-14">We provide specialized programs for preparation of entrance tests such as NDA, AFCAT, SSC CGL, SSC CHSL, and SSC GD</p>
-                <a href="#" class="u-active-none u-border-1 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-4">learn more</a>
+                <a href="{% url 'courses' %}#four" class="u-active-none u-border-1 u-border-active-palette-2-base u-border-hover-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-color u-top-left-radius-0 u-top-right-radius-0 u-btn-4">learn more</a>
               </div>
             </div>
           </div>
@@ -395,7 +395,7 @@ c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg>
           </span>
         </p>
         </p>
-        <a href="#" class="u-active-palette-1-light-3 u-align-center u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-palette-2-base u-btn u-btn-round u-button-style u-hover-palette-1-light-3 u-radius-20 u-text-active-palette-1-base u-text-hover-palette-1-base u-white u-btn-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Contact Us</a>
+        <a href="#contactus" class="u-active-palette-1-light-3 u-align-center u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-palette-2-base u-btn u-btn-round u-button-style u-hover-palette-1-light-3 u-radius-20 u-text-active-palette-1-base u-text-hover-palette-1-base u-white u-btn-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Contact Us</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-container-align-center u-container-align-center-lg u-container-align-center-xl u-white u-section-7" id="carousel_f178">
@@ -436,7 +436,7 @@ c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg>
         </p>
       </div>
     </section>
-    <section class="u-clearfix u-container-align-center u-section-8" id="carousel_6a48">
+    <section class="u-clearfix u-container-align-center u-section-8" id="contactus">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
