@@ -28,5 +28,8 @@ urlpatterns = [
     path('contact/', views.contact_view, name='contact'),
     path('index/', views.index_view, name='index'),
     path('courses/', views.courses_view, name='courses'),
+    path('courses1/', views.courses1_view, name='courses1'),
+    path('courses2/', views.courses2_view, name='courses2'),
+    path('courses3/', views.courses3_view, name='courses3'),
     path('whychooseus/', views.discover_view, name='discover'),
 ]

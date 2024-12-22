@@ -25,5 +25,15 @@ def index_view(request):
 def courses_view(request):
     return render(request, 'course.html')
 
+def courses1_view(request):
+    return render(request, 'course1.html')
+
+def courses2_view(request):
+    return render(request, 'course2.html')
+
+def courses3_view(request):
+    return render(request, 'course3.html')
 
 
+def discover_view(request):
+    return render(request, 'discover.html')
