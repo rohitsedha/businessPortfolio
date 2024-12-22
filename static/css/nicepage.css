@@ -26426,8 +26426,6 @@ h5,
 h6 {
   font-family: Roboto,sans-serif;
 }
-/*end-variables font-family*/
-/*begin-variables color*/
 .u-overlap.u-overlap-transparent .u-header,
 .u-image,
 .u-gradient {
@@ -26438,7 +26436,9 @@ h6 {
   color: #ffffff;
 }
 .u-body {
-  color: #111111; 
+  color: #000f3b; 
+  /* text-shadow: rgba(0, 0, 0, 0.2); */
+  font-weight: bold;
   background-color: #ffffff;
   --effect-scale: 1.1;
 }
@@ -29844,6 +29844,25 @@ input.u-field-input.u-field-input.u-active-palette-2-light-3:checked {
 a.u-link.u-hover-palette-2-light-3:hover {
   color: #fbeced !important;
 }
+/* .u-palette-2-base,
+.u-body.u-palette-2-base,
+section.u-palette-2-base:before,
+.u-palette-2-base > .u-audio-main-layout-wrapper:before,
+.u-palette-2-base > .u-container-layout:before,
+.u-palette-2-base > .u-inner-container-layout:before,
+.u-palette-2-base.u-sidenav:before,
+.u-container-layout.u-container-layout.u-palette-2-base:before,
+.u-table-alt-palette-2-base tr:nth-child(even) {
+  color: #FFFFFF; 
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); */
+  background-image: url('../images/skyy.avif') !important; 
+  background-size: cover;
+  background-position: relative;
+  opacity: 1;
+  z-index: -1000;
+  /* background-color: #db545a; */
+} */
+
 .u-palette-2-base,
 .u-body.u-palette-2-base,
 section.u-palette-2-base:before,
@@ -29854,8 +29873,29 @@ section.u-palette-2-base:before,
 .u-container-layout.u-container-layout.u-palette-2-base:before,
 .u-table-alt-palette-2-base tr:nth-child(even) {
   color: #ffffff;
-  background-color: #db545a;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); */
+  /* background-image: url('../images/freepik__expand__8040.png'); */
+  background-size: cover; /* Ensures the image covers the element fully */
+  background-position: center; /* Adjust as needed (e.g., center, top, etc.) */
+  position: relative; /* Ensures stacking context */
+  z-index: 0; /* Neutral stacking to avoid issues */
+  /* background-color: #db545a; */
 }
+
+.u-palette-2-base::before {
+  content: ""; /* Necessary for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/skyy.avif');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Adjust for transparency */
+  z-index: -1; /* Keeps it behind the content */
+}
+
 .u-input.u-palette-2-base,
 .u-field-input.u-palette-2-base,
 .u-button-style.u-palette-2-base,
@@ -31195,8 +31235,8 @@ section.u-palette-5-light-2:before,
 .u-palette-5-light-2.u-sidenav:before,
 .u-container-layout.u-container-layout.u-palette-5-light-2:before,
 .u-table-alt-palette-5-light-2 tr:nth-child(even) {
-  color: #111111;
-  background-color: #e0e5eb;
+  color: #ffffff;
+  background-color: #000f3b;
 }
 .u-input.u-palette-5-light-2,
 .u-field-input.u-palette-5-light-2,
@@ -39894,7 +39934,7 @@ li.active > a.u-button-style.u-text-palette-1-base,
 li.active > a.u-button-style.u-text-palette-1-base[class*="u-border-"],
 a.u-button-style.u-text-palette-1-base,
 a.u-button-style.u-text-palette-1-base[class*="u-border-"] {
-  color: #478ac9 !important;
+  color: #000f3b ;
   
   
   
@@ -40224,7 +40264,7 @@ li.active > a.u-button-style.u-text-palette-2-light-1,
 li.active > a.u-button-style.u-text-palette-2-light-1[class*="u-border-"],
 a.u-button-style.u-text-palette-2-light-1,
 a.u-button-style.u-text-palette-2-light-1[class*="u-border-"] {
-  color: #e68387 !important;
+  color: #000f3b ;
   
   
   
@@ -42666,7 +42706,7 @@ li.active > a.u-button-style.u-text-body-color,
 li.active > a.u-button-style.u-text-body-color[class*="u-border-"],
 a.u-button-style.u-text-body-color,
 a.u-button-style.u-text-body-color[class*="u-border-"] {
-  color: #111111 !important;
+  color: #000f3b ;
   
   
   
