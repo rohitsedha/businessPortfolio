@@ -28,7 +28,7 @@ and be inspired, Educational programs">
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "images/default-logo.png"
+		"logo": "images/logo1.png"
 }</script>
         <meta name="theme-color" content="#478ac9">
         <meta property="og:title" content="Home">
@@ -40,8 +40,8 @@ and be inspired, Educational programs">
             class="u-clearfix u-header u-header" id="sec-f299"
             style="height: 60px !important; padding: top -10px;"><div
                 class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-                <a href="#" class="u-image u-logo u-image-1">
-                    <img src="{% static 'images/default-logo.png' %}"
+                <a href="{% url 'home' %}#" class="u-image u-logo u-image-1">
+                    <img src="{% static 'images/logo1.png' %}"
                         class="u-logo-image u-logo-image-1">
                 </a>
                 <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
@@ -75,7 +75,7 @@ and be inspired, Educational programs">
                                     style="padding: 10px 20px;">About</a>
                             </li><li class="u-nav-item"><a
                                     class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                                    href="#{% url 'home' %}contactus"
+                                    href="{% url 'home' %}#contactus"
                                     style="padding: 10px 20px;">Contact</a>
                             </li></ul>
                     </div>
@@ -111,6 +111,7 @@ and be inspired, Educational programs">
         top: 0;
         left: 0;
         width: 100%;
+        height: 60px;
         z-index: 1000; 
         background-color: #8ed2ff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
