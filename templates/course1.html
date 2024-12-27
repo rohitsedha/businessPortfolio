@@ -34,7 +34,7 @@ and be inspired, Educational programs">
         <meta property="og:title" content="Home">
         <meta property="og:type" content="website">
         <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-        <body data-home-page="Home.html" data-home-page-title="Home"
+    <body data-home-page="Home.html" data-home-page-title="Home"
         data-path-to-root="{% url 'home' %}" data-include-products="false"
         class="u-body u-xl-mode" data-lang="en"><header
             class="u-clearfix u-header u-header" id="sec-f299"
@@ -118,196 +118,264 @@ and be inspired, Educational programs">
       }
       
     </style>
-    <div class="slideshow-container">
-      <center><h2 style="font-family:'Times New Roman', Times, serif"><b>COURSES OFFERED BY SKY</b></h2></center>
-        <div class="mySlides active-slide">
-            <h2>Tuition for Classes 1-8: All Subjects</h2>
-            <p>We offer comprehensive tuition for students in Classes 1 to 8, covering subjects like:<br>
-              Mathematics<br>
-              Science (Physics, Chemistry, Biology)<br>
-              English<br>
-              Social Studies<br>
-              Hindi/Regional Languages<br>
-              Computer Science<br>
-              And more!<br><br>
-              Our expert teachers use interactive techniques and customized study plans to help students build a strong
-              foundation in all subjects, ensuring long-term academic success.</p>
-        </div>
-        <div class="mySlides">
-            <h2>Tuition for Classes 9-10: Subject-Wise</h2>
-            <p>For students in Classes 9 and 10, we offer tuition tailored to specific subjects:<br>
-              Mathematics<br>
-              Science (Physics, Chemistry, Biology)<br>English<br>
-              Social Science<br>Languages<br>Computer Science<br>
-              We focus on the core subjects that matter most for your board exams. Our subject-wise coaching ensures
-              students grasp essential concepts, solve problems confidently, and perform excellently in exams.</p>
-        </div>
 
-        <div class="mySlides">
-          <h2>Tuition for Classes 11-12: Subject-Wise</h2>
-          <p>For senior students in Classes 11 and 12, we provide specialized coaching in:<br><br>
-            Physics<br>
-            Chemistry<br>
-            Biology<br>
-            Mathematics<br>
-            Accountancy<br>
-            Business Studies<br>
-            Economics<br>
-            English<br>
-            Computer Science<br>
-            Whether you're aiming for a career in engineering, medicine, commerce, or any other field, we help you excel in the subjects that matter most for your future.</p>
-        </div>
-        <div class="mySlides">
-          <h2>Coaching for Entrance Tests</h2>
-          <p>NDA (National Defence Academy): Our NDA coaching program is designed to help
-            students clear the entrance exam with flying colors. We cover all subjects, including Mathematics, General
-            Ability Test (GAT).<br><br>
+        <section
+            class="u-align-center u-clearfix u-container-align-center u-container-align-left u-palette-2-base u-section-2"
+            id="carousel_1a2b">
+            <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                <div
+                    class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                    <div class="u-layout">
+                        <div class="u-layout-row">
+                            <div
+                                class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
+                                <div class="slideshow-container">
+                                    <center><h2
+                                            style="font-family:'Times New Roman', Times, serif"><b>COURSES
+                                                OFFERED BY SKY</b></h2></center>
+                                    <div class="mySlides active-slide">
+                                        <h2>Tuition for Classes 1-8: All
+                                            Subjects</h2>
+                                        <p>We offer comprehensive tuition for
+                                            students in Classes 1 to 8, covering
+                                            subjects like:<br>
+                                            Mathematics<br>
+                                            Science (Physics, Chemistry,
+                                            Biology)<br>
+                                            English<br>
+                                            Social Studies<br>
+                                            Hindi/Regional Languages<br>
+                                            Computer Science<br>
+                                            And more!<br><br>
+                                            Our expert teachers use interactive
+                                            techniques and customized study
+                                            plans to help students build a
+                                            strong
+                                            foundation in all subjects, ensuring
+                                            long-term academic success.</p>
+                                    </div>
+                                    <div class="mySlides">
+                                        <h2>Tuition for Classes 9-10:
+                                            Subject-Wise</h2>
+                                        <p>For students in Classes 9 and 10, we
+                                            offer tuition tailored to specific
+                                            subjects:<br>
+                                            Mathematics<br>
+                                            Science (Physics, Chemistry,
+                                            Biology)<br>English<br>
+                                            Social
+                                            Science<br>Languages<br>Computer
+                                            Science<br>
+                                            We focus on the core subjects that
+                                            matter most for your board exams.
+                                            Our subject-wise coaching ensures
+                                            students grasp essential concepts,
+                                            solve problems confidently, and
+                                            perform excellently in exams.</p>
+                                    </div>
 
-            AFCAT (Air Force Common Admission Test): We offer comprehensive AFCAT coaching, including preparation for
-            all sections of the exam: General Awareness, Verbal Ability, Numerical Ability, Reasoning, and more. Our
-            instructors guide you through the entire process, ensuring you’re well-prepared for the written and
-            interview stages.<br><br>
-            SSC (Staff Selection Commission): Our SSC coaching is focused on preparing students for exams like SSC CGL,
-            SSC CHSL, and SSC GD. We cover all subjects in detail, including Quantitative Aptitude, General
-            Intelligence, English Comprehension, and General Awareness, along with effective test-taking strategies.</p>
-        </div>
-        <!-- More slides -->
-        <button class="prev" onclick="plusSlides(-1)">❮</button>
-        <button class="next" onclick="plusSlides(1)">❯</button>
-    </div>
-    <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <!-- More dots -->
-    </div>
-    <br>
-    <script>
-        let slideIndex = 2;
-        showSlides(slideIndex);
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            const slides = document.querySelectorAll('.mySlides');
-            const dots = document.querySelectorAll('.dot');
-            if (n > slides.length) slideIndex = 1;
-            if (n < 1) slideIndex = slides.length;
-            slides.forEach(slide => slide.style.display = 'none');
-            dots.forEach(dot => dot.classList.remove('active'));
-            slides[slideIndex - 1].style.display = 'block';
-            dots[slideIndex - 1].classList.add('active');
-        }
-    </script>
-    <style>
-      footer {
-        background: linear-gradient(to right, #3a5fcc, #000f3b);
-        color: #ecf0f1;
-        padding: 20px 10px;
-        text-align: center;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 0px;
-      }
-    
-      .footer-text {
-        margin: 0;
-        font-size: 14px;
-        line-height: 1.5;
-      }
-    
-      @media (max-width: 768px) {
-        footer {
-          padding: 15px 5px;
-        }
-    
-        .footer-text {
-          font-size: 12px;
-        }
-      }
-    </style>
-    
-    <footer>
-      <p class="footer-text">
-        &copy; 2024 SKY Coaching Institution. All rights reserved.
-        Unauthorized duplication or publication of any materials from
-        this site is strictly prohibited.
-      </p>
-    </footer>
-</body>
+                                    <div class="mySlides">
+                                        <h2>Tuition for Classes 11-12:
+                                            Subject-Wise</h2>
+                                        <p>For senior students in Classes 11 and
+                                            12, we provide specialized coaching
+                                            in:<br><br>
+                                            Physics<br>
+                                            Chemistry<br>
+                                            Biology<br>
+                                            Mathematics<br>
+                                            Accountancy<br>
+                                            Business Studies<br>
+                                            Economics<br>
+                                            English<br>
+                                            Computer Science<br>
+                                            Whether you're aiming for a career
+                                            in engineering, medicine, commerce,
+                                            or any other field, we help you
+                                            excel in the subjects that matter
+                                            most for your future.</p>
+                                    </div>
+                                    <div class="mySlides">
+                                        <h2>Coaching for Entrance Tests</h2>
+                                        <p>NDA (National Defence Academy): Our
+                                            NDA coaching program is designed to
+                                            help
+                                            students clear the entrance exam
+                                            with flying colors. We cover all
+                                            subjects, including Mathematics,
+                                            General
+                                            Ability Test (GAT).<br><br>
+
+                                            AFCAT (Air Force Common Admission
+                                            Test): We offer comprehensive AFCAT
+                                            coaching, including preparation for
+                                            all sections of the exam: General
+                                            Awareness, Verbal Ability, Numerical
+                                            Ability, Reasoning, and more. Our
+                                            instructors guide you through the
+                                            entire process, ensuring you’re
+                                            well-prepared for the written and
+                                            interview stages.<br><br>
+                                            SSC (Staff Selection Commission):
+                                            Our SSC coaching is focused on
+                                            preparing students for exams like
+                                            SSC CGL,
+                                            SSC CHSL, and SSC GD. We cover all
+                                            subjects in detail, including
+                                            Quantitative Aptitude, General
+                                            Intelligence, English Comprehension,
+                                            and General Awareness, along with
+                                            effective test-taking
+                                            strategies.</p>
+                                    </div>
+
+                                    <button class="prev"
+                                        onclick="plusSlides(-1)">❮</button>
+                                    <button class="next"
+                                        onclick="plusSlides(1)">❯</button>
+                                </div>
+                                <div class="dots">
+                                    <span class="dot"
+                                        onclick="currentSlide(1)"></span>
+                                    <span class="dot"
+                                        onclick="currentSlide(2)"></span>
+                                    <span class="dot"
+                                        onclick="currentSlide(3)"></span>
+                                    <span class="dot"
+                                        onclick="currentSlide(4)"></span>
+
+                                </div>
+                                <br>
+                                <script>
+                          let slideIndex = 2;
+                          showSlides(slideIndex);
+                          function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                          }
+                          function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                          }
+                          function showSlides(n) {
+                              const slides = document.querySelectorAll('.mySlides');
+                              const dots = document.querySelectorAll('.dot');
+                              if (n > slides.length) slideIndex = 1;
+                              if (n < 1) slideIndex = slides.length;
+                              slides.forEach(slide => slide.style.display = 'none');
+                              dots.forEach(dot => dot.classList.remove('active'));
+                              slides[slideIndex - 1].style.display = 'block';
+                              dots[slideIndex - 1].classList.add('active');
+                          }
+                      </script>
+
+                                <style>
+                  
+                    .slideshow-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        max-width: 1000px;
+                        margin: 80px auto 0;
+                        overflow: hidden;
+                        position: relative;
+                    }
+                    .mySlides {
+                        display: none;
+                        width: 100%;
+                        text-align: left;
+                        padding: 20px 40px;
+                        background-color: linear-gradient(to right, #afd8ff, #c6d4fe);
+                    }
+                    .active-slide {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                    .prev, .next {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        padding: 10px;
+                        cursor: pointer;
+                        color: #000;
+                        font-size: 18px;
+                        border: none;
+                        background: rgba(35, 176, 241, 0.35);
+                    }
+                    .prev {
+                        left: 10px;
+                    }
+                    .next {
+                        right: 10px;
+                    }
+                    .dots {
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        margin-top: 20px;
+                    }
+                    .dot {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: rgba(0, 15, 59, 0.9);
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                    }
+                    .dot.active {
+                        background-color: #8ed2ff;
+                    }
+                    @media (max-width: 768px) {
+                        nav ul {
+                            flex-direction: column;
+                            gap: 10px;
+                        }
+                        footer {
+                            padding: 15px;
+                        }
+                    }
+                  </style>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="footer-text">
+                &copy; 2024 SKY Coaching Institution. All rights reserved.
+                Unauthorized duplication or publication of any materials from
+                this site is strictly prohibited.
+            </p>
+        </footer>
+    </body>
 </html>
-<style>
 
-  /* Slideshow */
-  .slideshow-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      max-width: 1000px;
-      margin: 80px auto 0;
-      overflow: hidden;
-      border-radius: 5%;
-      position: relative;
-  }
-  .mySlides {
-      display: none;
-      width: 100%;
-      text-align: left;
-      padding: 20px 40px;
-      background-color: rgba(0, 15, 59, 0.51);
-      border-radius: 5%;
-  }
-  .active-slide {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-  }
-  .prev, .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 10px;
-      cursor: pointer;
-      color: #000;
-      font-size: 18px;
-      border: none;
-      background: rgba(35, 176, 241, 0.35);
-      border-radius: 50%;
-  }
-  .prev {
-      left: 10px;
-  }
-  .next {
-      right: 10px;
-  }
-  .dots {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
-  }
-  .dot {
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background-color: rgba(0, 15, 59, 0.9);
-      cursor: pointer;
-      transition: background-color 0.3s;
-  }
-  .dot.active {
-      background-color: #8ed2ff;
-  }
-  @media (max-width: 768px) {
-      nav ul {
-          flex-direction: column;
-          gap: 10px;
-      }
-      footer {
-          padding: 15px;
-      }
-  }
-</style>
+<style>
+        footer {
+          background: linear-gradient(to right, #3a5fcc, #000f3b);
+          color: #ecf0f1;
+          padding: 20px 10px;
+          text-align: center;
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+          margin-bottom: 0px;
+        }
+      
+        .footer-text {
+          margin: 0;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      
+        @media (max-width: 768px) {
+          footer {
+            padding: 15px 5px;
+          }
+      
+          .footer-text {
+            font-size: 12px;
+          }
+        }
+      </style>
